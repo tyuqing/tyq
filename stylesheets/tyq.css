@@ -1,4 +1,8 @@
 /* tyq's base */
+* {
+  padding: 0;
+  margin: 0;
+}
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -6,11 +10,11 @@ html {
 }
 body {
   margin: 0;
-  background: #FFF;
+  background: #2f2f2f;
   font-size: 15px;
   font-weight: 300;
-  color: #000;
-  padding: 20px;
+  color: #cfcfcf;
+  padding: 0;
   font-family: "Glyphicons Halflings",sans-serif;
   line-height: 1.55;
   text-rendering: optimizeLegibility;
@@ -1364,4 +1368,93 @@ ul, ol {
 .tyq-s-1, .tyq-s-2, .tyq-s-3, .tyq-s-4, .tyq-s-5, .tyq-s-6, .tyq-s-7, .tyq-s-8, .tyq-s-9, .tyq-s-10, .tyq-s-11, .tyq-s-12, .tyq-l-1, .tyq-l-2, .tyq-l-3, .tyq-l-4, .tyq-l-5, .tyq-l-6, .tyq-l-7, .tyq-l-8, .tyq-l-9, .tyq-l-10, .tyq-l-11, .tyq-l-12 {
   display: inline-block;
   position:relative;
+}
+/* tyq's page */
+html, body {
+  height: 100%;
+}
+/* 头像 */
+#tyq-avatar {
+  text-align: center;
+}
+#tyq-avatar img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+#about {
+  text-align: center;
+}
+#about h1 {
+  font-size: 2em;
+  line-height: 36px;
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+#about p {
+  color: #7a7a7a;
+  font-size: 1.18em;
+  line-height: 28px;
+}
+/* 右滑按钮 */
+#page-control {
+  z-index: 200;
+  position: fixed;
+  width: 1px;
+  height: 1px;
+}
+/* 动画类 */
+.animated {
+  animation-fill-mode:both;
+  -webkit-animation-fill-mode:both;
+  animation-duration:5s;
+  -webkit-animation-duration:5s;
+}
+/* 头像的特效 */
+.avatar-loader {
+  -webkit-animation-name: avatar-loader;
+  animation-name: avatar-loader;
+}
+@-webkit-keyframes avatar-loader {
+    0% {
+      
+        -webkit-transform: translate3d(0,100%,0);
+        transform: translate3d(0,200%,0)
+    }
+    50% {
+        -webkit-transform: translate3d(0,100%,0);
+        transform: translate3d(0,200%,0)
+    }
+    100% {
+        -webkit-transform: none;
+        transform: none
+    }
+}
+@keyframes avatar-loader {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0,-200%,0);
+    transform: translate3d(0,-200%,0)
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none
+  }
+}
+.fade-in {
+  -webkit-animation-name: fade-in;
+  animation-name: fade-in;
+}
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
