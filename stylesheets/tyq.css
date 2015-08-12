@@ -10,10 +10,10 @@ html {
 }
 body {
   margin: 0;
-  background: #2f2f2f;
+  background: #ffffff;
   font-size: 15px;
   font-weight: 300;
-  color: #cfcfcf;
+  color: #fff;
   padding: 0;
   font-family: "Glyphicons Halflings",sans-serif;
   line-height: 1.55;
@@ -1176,7 +1176,7 @@ ul, ol {
     display: none !important;
   }
   .tyq-row {
-    margin-top:20px;
+    /* margin-top:20px; */
     padding:10px 0;
     width: 750px;
   }
@@ -1372,10 +1372,36 @@ ul, ol {
 /* tyq's page */
 html, body {
   height: 100%;
+  text-align: center;
+}
+/* 背景渐变色 */
+body {
+  background: -webkit-gradient(linear, 0% 50%, 100% 0%, from(#f4f5f6), to(#999c9e));/*Old gradient for webkit*/
+  background: -webkit-linear-gradient(left 45deg, #f4f5f6, #999c9e);/*new gradient for Webkit*/
+  background: -moz-linear-gradient(left 45deg, #f4f5f6, #999c9e);/*Mozilla*/
+  background: -o-linear-gradient(left 45deg, #f4f5f6, #999c9e);/*Opera11*/
+}
+#bg-div {
+  /* height: 500px; */
+  margin-top: 50px;
+  margin-left: 70px;
+  border-top: 500px solid #0099cc;/* 30px; */
+  border-left: 200px solid transparent;
+  -moz-box-shadow:-10px 5px 9px #040404;
+  -webkit-box-shadow:-10px 5px 9px #040404;
+  box-shadow:-10px 5px 9px #040404;
+}
+#content {
+  top: 50%;
+  position: absolute;
+  margin-top: -200px;
+  width: 100%;
 }
 /* 头像 */
 #tyq-avatar {
   text-align: center;
+  position: absolute;
+  width: 100%
 }
 #tyq-avatar img {
   width: 200px;
@@ -1383,6 +1409,7 @@ html, body {
   border-radius: 50%;
 }
 #about {
+  margin-top: 220px;
   text-align: center;
 }
 #about h1 {
@@ -1392,7 +1419,7 @@ html, body {
   letter-spacing: -1px;
 }
 #about p {
-  color: #7a7a7a;
+  color: #fff;
   font-size: 1.18em;
   line-height: 28px;
 }
@@ -1417,17 +1444,16 @@ html, body {
 }
 @-webkit-keyframes avatar-loader {
     0% {
-      
-        -webkit-transform: translate3d(0,100%,0);
-        transform: translate3d(0,200%,0)
+      top: 50%;
+      margin-top: -110px;
     }
     50% {
-        -webkit-transform: translate3d(0,100%,0);
-        transform: translate3d(0,200%,0)
+      top: 50%;
+      margin-top: -110px;
     }
     100% {
-        -webkit-transform: none;
-        transform: none
+      top: 0;
+      margin-top: 0;
     }
 }
 @keyframes avatar-loader {
