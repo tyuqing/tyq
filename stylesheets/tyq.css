@@ -1382,14 +1382,12 @@ body {
   background: -o-linear-gradient(left 45deg, #f4f5f6, #999c9e);/*Opera11*/
 }
 #bg-div {
-  /* height: 500px; */
-  margin-top: 50px;
-  margin-left: 70px;
-  border-top: 500px solid #0099cc;/* 30px; */
-  border-left: 200px solid transparent;
+  background-color: #0099cc;
+  height: 470px;
+  -webkit-transform: rotate(2deg) translate(150px,80px) skew(25deg);
   -moz-box-shadow:-10px 5px 9px #040404;
   -webkit-box-shadow:-10px 5px 9px #040404;
-  box-shadow:-10px 5px 9px #040404;
+  box-shadow:-15px 8px 25px #040404;
 }
 #content {
   top: 50%;
