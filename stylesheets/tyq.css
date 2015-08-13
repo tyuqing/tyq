@@ -1373,6 +1373,39 @@ ul, ol {
 html, body {
   height: 100%;
   text-align: center;
+  z-index: 0;
+}
+/* 菜单栏 */
+#nav {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  list-style-type: none;
+  list-style-image: none;
+  color: #FFF;
+  font-size: 23px;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+  z-index: 20;
+}
+#nav li {
+  padding: 10px 11px;
+  margin: 0;
+  display: inline;
+  cursor: pointer;
+}
+#labout:hover, #labout.act {
+  color: #0099CC;
+}
+#lresume:hover, #lresume.act {
+  color: #2E982E;
+}
+#lproject:hover, #lproject.act {
+  color: #C70101;
+}
+#lcontact:hover, #lcontact.act {
+  color: #666666;
 }
 /* 背景渐变色 */
 body {
@@ -1381,19 +1414,53 @@ body {
   background: -moz-linear-gradient(left 45deg, #f4f5f6, #999c9e);/*Mozilla*/
   background: -o-linear-gradient(left 45deg, #f4f5f6, #999c9e);/*Opera11*/
 }
+/* 卡片背景 */
 #bg-div {
-  background-color: #0099cc;
-  height: 470px;
-  -webkit-transform: rotate(2deg) translate(150px,80px) skew(25deg);
-  -moz-box-shadow:-10px 5px 9px #040404;
-  -webkit-box-shadow:-10px 5px 9px #040404;
-  box-shadow:-15px 8px 25px #040404;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  z-index: 10;
 }
+#bg-div div {
+  display: inline-block;
+  width: 100%;
+}
+#bg-about {
+  position: absolute;
+  top: 12%;
+  left: 13%;
+  background-color: #0099CC;
+  height: 80%;
+  min-height: 470px;
+  transform: rotate(2deg) skew(28deg);
+  -ms-transform: rotate(2deg) skew(28deg);   /* IE 9 */
+  -moz-transform: rotate(2deg) skew(28deg);  /* Firefox */
+  -webkit-transform: rotate(2deg) skew(28deg); /* Safari 和 Chrome */
+  -o-transform: rotate(2deg) skew(28deg);
+  -moz-box-shadow: -10px 5px 9px #040404;/* Firefox4.0- */
+  -webkit-box-shadow: -10px 5px 9px #040404;/* Safari and Google chrome10.0- */
+  box-shadow: -15px 8px 25px #040404;/* Firefox4.0+ 、 Google chrome 10.0+ 、 Oprea10.5+ and IE9 */
+}
+#bg-resume {
+  position: absolute;
+  top: 10%;
+  left: 95%;
+  background-color: #2E982E;
+  height: 100%;
+  min-height: 700px;
+  transform: rotate(1deg) skew(8deg,0);
+  -ms-transform: rotate(1deg) skew(8deg,0);
+  -moz-transform: rotate(1deg) skew(8deg,0);
+  -webkit-transform: rotate(1deg) skew(8deg,0);
+  -webkit-box-shadow: -10px 30px 30px #00202B;
+}
+/* 内容居中 */
 #content {
   top: 50%;
   position: absolute;
   margin-top: -200px;
   width: 100%;
+  z-index: 100;
 }
 /* 头像 */
 #tyq-avatar {
