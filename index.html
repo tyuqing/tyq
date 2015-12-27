@@ -6,36 +6,44 @@
   <link rel="stylesheet" href="./stylesheets/tyq.css">
 </head>
 <body>
-  <ul id="nav">
-    <li id="labout" class="act">我</li>
-    <li id="lresume">简历</li>
-    <li id="lproject">项目</li>
-    <li id="lcontact">联系我</li>
-  </ul>
-  <div id="bg-div">
+  <nav>
+    <ul>
+      <li id="nav-about" class="act">我</li>
+      <li id="nav-resume">简历</li>
+      <li id="nav-project">项目</li>
+      <li id="nav-contact">联系我</li>
+    </ul>
+  </nav>
+  
+  <div id="bg-card">
     <div id="bg-about"></div>
     <div id="bg-resume"></div>
     <div id="bg-project"></div>
   </div>
-<div id="content">
-  <div id="tyq-avatar" class="tyq-row animated avatar-loader">
-    <div class="tyq-l-12">
-      <img class="" src="./images/tyq.jpg" alt="">
+  <div id="content">
+    <div id="content-about">
+        <img id="tyq-avatar" class="animated avatar-loader" src="./images/tyq.jpg" alt="">
+      <article id="article-about" class="tyq-row">
+        <div class="tyq-l-12 animated fade-in">
+          <h1>
+            <span>我是</span>
+            <b>田雨晴</b>
+          </h1>
+          <p>你我你我你我你我你我你我你我你我你我你我</p>
+          <p>你我你我你我你我你我你我你我你我你我你我你我你我你我</p>
+          <p>你我你我你我你我你我你我</p>
+        </div>
+      </article>
+    </div>
+    <div id="content-resume">
+      
+    </div>
+    <div id="content-project">
+      
     </div>
   </div>
-  <div id="about" class="tyq-row">
-    <div class="tyq-l-12 animated fade-in">
-      <h1>
-        <span>我是</span>
-        <strong>田雨晴</strong>
-      </h1>
-      <p>你我你我你我你我你我你我你我你我你我你我</p>
-      <p>你我你我你我你我你我你我你我你我你我你我你我你我你我</p>
-      <p>你我你我你我你我你我你我</p>
-    </div>
-  </div>
-</div>
-</body>
+
 <script type="text/javascript" src="./javascripts/jquery-1.11.2.min.js"></script>
 <script type="text/javascript" src="./javascripts/main.js"></script>
+</body>
 </html>
