@@ -1402,7 +1402,7 @@ nav li {
 #nav_about:hover, #nav_about.act {
   color: #0099CC;
 }
-#nav_skill:hover, #nav-resume.act {
+#nav_skill:hover, #nav_skill.act {
   color: #2E982E;
 }
 #nav_project:hover, #nav_project.act {
@@ -1587,7 +1587,7 @@ body {
   text-align: left;
 }
 #content_project > div {
-  width: 75%;
+  max-width: 700px;
 }
 #proj_title {
   background-color: #FFFFFF;
@@ -1598,39 +1598,81 @@ body {
   padding: 0 5px 0 5px;
 }
 /* 作品的菜单栏 */
-#menu_proj {
+#proj_menu {
   text-align: right;
 }
-#menu_proj ul{
-  list-style-type: none;
-  list-style-image: none;
+#proj_menu ul{
   color: #FFF;
+  display: inline-block;
   font-size: 18px;
   font-weight: bold;
+  list-style-type: none;
+  list-style-image: none;
   margin: 0;
   padding: 0;
   z-index: 20;
+  overflow: hidden;
 }
-#menu_proj li {
-  padding: 10px 11px;
-  margin: 0;
-  display: inline;
+#proj_menu li {
+  display: block;
+  float: left;
+  margin: 0 3px;
+  padding: 0 5px 9px 5px;
+  border: none;
+  width: 50px;
+  font-size: 20px;
+  text-align: center;
   cursor: pointer;
 }
+#proj_menu li.active {
+  background: transparent url(../images/dot.png) center bottom no-repeat;
+}
 /* 作品的内容部分 */
+.hidden {
+  display: none !important;
+}
 .proj-body {
   display: flex;
+  margin-top: 20px;
 }
 .proj-body .proj-pic {
+  height: 245px;
+  /* width: 500px; */
+  overflow: hidden;
   display: inline-block;
-  flex: 7;
+  width: 400px;
   border: 3px solid #FFFFFF;
 }
 .proj-body .proj-desc {
   display: inline-block;
-  flex: 3;
+  flex: 1;
+  margin-left: 10px;
 }
-#proj_erp
+.proj-body .proj-desc h4 {
+  margin: 3px 0;
+}
+.proj-body .proj-desc p {
+  margin: 5px 0 15px;
+}
+/* 作品的图片选择滑动按钮 */
+.proj_img_control {
+  margin: 255px 0 0 -406px;
+  padding: 0 5px 0 0 ;
+  position: absolute;
+  width: 403px;
+  text-align: right;
+}
+.proj_img_control li {
+  display: inline-block;
+  list-style-type: none;
+  width: 15px;
+  height: 15px;
+  margin: 0px 0px 0px 5px;
+  background: transparent url(../images/g_dot.png) no-repeat;
+}
+.proj_img_control li.current {
+  background: transparent url(../images/w_dot.png) no-repeat;
+}
 /* 右滑按钮 */
 #page-control {
   z-index: 200;

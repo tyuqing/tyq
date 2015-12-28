@@ -74,11 +74,11 @@
     <div id="content_project">
       <div>
         <h1 id="proj_title">我的作品</h1>
-        <div id="menu_proj">
+        <div id="proj_menu">
           <ul>
-            <li title="ERP">后台</li>
-            <li title="WAP">WAP</li>
-            <li title="FE">前台</li>
+            <li id="proj_menu_erp" title="中冶南方武彭公司ERP" class="active">后台</li>
+            <li id="proj_menu_wap" title="小柒账单">WAP</li>
+            <li id="proj_menu_fe" title="纳思视频监控系统">前台</li>
           </ul>
         </div>
       </div>
@@ -90,30 +90,39 @@
             <li></li>
             <li></li>
           </ul>
+          
         </div>
-        <div class="proj-desc" class="proj-body hidden">
+        <ol class="proj_img_control">
+            <li id="erp_control_1" class="current"></li>
+            <li id="erp_control_2" class=""></li>
+            <li id="erp_control_3" class=""></li>
+            <li id="erp_control_4" class=""></li>
+          </ol>
+        <div class="proj-desc">
           <h4>项目描述:</h4>
-          <p></p>
+          <p>基于.net的包含采购、销售、生产、质检、研发、人资、物流、成本的公司ERP网站开发。</p>
           <h4>期间工作:</h4>
-          <p></p>
+          <p>1.参与需求分析，界面设计，数据库设计的文档编写；<br>
+            2.使用easyui搭建界面，完成业务逻辑；<br>
+            3.合同文件上传、统计信息导入导出功能。</p>
         </div>
       </div>
-      <div id="proj_wap">
+      <div id="proj_wap" class="proj-body hidden">
         <div class="proj-pic"></div>
         <div class="proj-desc">
           <h4>项目描述:</h4>
-          <p></p>
+          <p>基于SenchaTouch的记账WebAPP开发</p>
           <h4>期间工作:</h4>
-          <p></p>
+          <p>1.项目基本样式修改；<br>2.使用eChart进行图表汇总呈现；<br>3.使用grunt进行工程化处理</p>
         </div>
       </div>
-      <div id="proj_FE" class="proj-body hidden">
+      <div id="proj_fe" class="proj-body hidden">
         <div class="proj-pic"></div>
         <div class="proj-desc">
           <h4>项目描述:</h4>
-          <p></p>
+          <p>基于控制信令与媒体流分离的架构，包含Web端、PC端、移动端和服务端多向合作的视频监控系统开发。</p>
           <h4>期间工作:</h4>
-          <p></p>
+          <p>1.任Web端负责人并主导Web端功能开发；<br>2.推行Git版本控制工具进行项目合作；<br>3.完成短信和邮件报警功能；<br>4.使用Bootstrap搭建界面；<br>5.编写WebService供PC端调用；<br>6.利用心跳机制传递设备播放信息。</p>
         </div>
       </div>
     </div>
