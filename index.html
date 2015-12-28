@@ -8,22 +8,23 @@
 <body>
   <nav>
     <ul>
-      <li id="nav-about" class="act">我</li>
-      <li id="nav-resume">简历</li>
-      <li id="nav-project">项目</li>
-      <li id="nav-contact">联系我</li>
+      <li id="nav_about" class="act">我</li>
+      <li id="nav_skill">技能</li>
+      <li id="nav_project">作品</li>
+      <li id="nav_contact">联系我</li>
     </ul>
   </nav>
   
-  <div id="bg-card">
-    <div id="bg-about"></div>
-    <div id="bg-resume"></div>
-    <div id="bg-project"></div>
+  <div id="bg_card">
+    <div id="bg_about"></div>
+    <div id="bg_skill"></div>
+    <div id="bg_project"></div>
   </div>
+
   <div id="content">
-    <div id="content-about">
-        <img id="tyq-avatar" class="animated avatar-loader" src="./images/tyq.jpg" alt="">
-      <article id="article-about" class="tyq-row">
+    <div id="content_about">
+        <img id="tyq_avatar" class="animated avatar-loader" src="./images/tyq.jpg" alt="">
+      <article id="article_about" class="tyq-row">
         <div class="tyq-l-12 animated fade-in">
           <h1>
             <span>我是</span>
@@ -35,14 +36,88 @@
         </div>
       </article>
     </div>
-    <div id="content-resume">
-      
+
+    <div id="content_skill">
+      <section>
+        <h1>田雨晴的技能</h1>
+        <article class="paragraph">
+          <h2 class="section-title">html\css</h2>
+          <p>能够编写语义化的html，实现基本的布局与动画</p>
+          <p>了解HTML5/CSS3新特性，有使用经验</p>
+        </article>
+        <article class="paragraph">
+          <h2 class="section-title">JavaScript</h2>
+          <p>熟悉javascript编程语言，对其深层次特性有一定的认识</p>
+          <p>了解ECMAScript6的特性</p>
+        </article>
+        <article class="paragraph">
+          <h2 class="section-title">PHP</h2>
+          <p>了解PHP编程语言</p>
+          <p>了解THinkPHP框架</p>
+        </article>
+        <article class="paragraph">
+          <h2 class="section-title">第三方库</h2>
+          <p>熟悉jQuery、bootstrap、senchatouch的使用</p>
+          <p>了解angular，了解前端mvc模型</p>
+        </article>
+        <article class="paragraph">
+          <h2 class="section-title">前端工程化</h2>
+          <p>了解CMD|AMD规范</p>
+          <p>使用Grunt对项目进行工程化处理</p>
+          <p>使用Git、SVN、Sublime等工具进行开发</p>
+          <p>了解SEO搜索引擎优化</p>
+          <p>了解XSS、CSRF、SQL注入等基本的Web安全知识</p>
+        </article>
+      </section>
     </div>
-    <div id="content-project">
-      
+
+    <div id="content_project">
+      <div>
+        <h1 id="proj_title">我的作品</h1>
+        <div id="menu_proj">
+          <ul>
+            <li title="ERP">后台</li>
+            <li title="WAP">WAP</li>
+            <li title="FE">前台</li>
+          </ul>
+        </div>
+      </div>
+      <div id="proj_erp" class="proj-body">
+        <div class="proj-pic">
+          <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
+        <div class="proj-desc" class="proj-body hidden">
+          <h4>项目描述:</h4>
+          <p></p>
+          <h4>期间工作:</h4>
+          <p></p>
+        </div>
+      </div>
+      <div id="proj_wap">
+        <div class="proj-pic"></div>
+        <div class="proj-desc">
+          <h4>项目描述:</h4>
+          <p></p>
+          <h4>期间工作:</h4>
+          <p></p>
+        </div>
+      </div>
+      <div id="proj_FE" class="proj-body hidden">
+        <div class="proj-pic"></div>
+        <div class="proj-desc">
+          <h4>项目描述:</h4>
+          <p></p>
+          <h4>期间工作:</h4>
+          <p></p>
+        </div>
+      </div>
     </div>
   </div>
-
 <script type="text/javascript" src="./javascripts/jquery-1.11.2.min.js"></script>
 <script type="text/javascript" src="./javascripts/main.js"></script>
 </body>

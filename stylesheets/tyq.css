@@ -1374,6 +1374,7 @@ html, body {
   height: 100%;
   text-align: center;
   z-index: 0;
+  overflow: hidden;
 }
 /* 菜单栏 */
 nav {
@@ -1398,16 +1399,16 @@ nav li {
   display: inline;
   cursor: pointer;
 }
-#nav-about:hover, #nav-about.act {
+#nav_about:hover, #nav_about.act {
   color: #0099CC;
 }
-#nav-resume:hover, #nav-resume.act {
+#nav_skill:hover, #nav-resume.act {
   color: #2E982E;
 }
-#nav-project:hover, #nav-project.act {
+#nav_project:hover, #nav_project.act {
   color: #C70101;
 }
-#nav-contact:hover, #nav-contact.act {
+#nav_contact:hover, #nav_contact.act {
   color: #666666;
 }
 /* 底色背景渐变色 */
@@ -1419,17 +1420,17 @@ body {
   background-attachment: fixed; /*背景相对于窗体固定*/
 }
 /* 彩色卡片背景 */
-#bg-card {
+#bg_card {
   height: 100%;
   width: 100%;
   position: absolute;
   z-index: 10;
 }
-#bg-card div {
+#bg_card div {
   display: inline-block;
   width: 100%;
 }
-#bg-about {
+#bg_about {
   position: absolute;
   top: 12%;
   left: 13%;
@@ -1445,7 +1446,7 @@ body {
   -webkit-box-shadow: -10px 5px 9px #040404;/* Safari and Google chrome10.0- */
   box-shadow: -15px 8px 25px #040404;/* Firefox4.0+ 、 Google chrome 10.0+ 、 Oprea10.5+ and IE9 */
 }
-#bg-resume {
+#bg_skill {
   position: absolute;
   top: 10%;
   left: 95%;
@@ -1459,7 +1460,7 @@ body {
   -webkit-box-shadow: -10px 30px 30px #00202B;
   box-shadow: -10px 30px 30px #00202B;
 }
-#bg-project {
+#bg_project {
   position: absolute;
   top: 14%;
   left: 182%;
@@ -1481,27 +1482,27 @@ body {
   z-index: 100;
 }
 /* 自我介绍部分 */
-#content-about {
+#content_about {
   margin-top: 150px;
   flex: 1;
   text-align: center;
 }
 /* 头像 */
-#tyq-avatar{
+#tyq_avatar{
   width: 200px;
   height: 200px;
   border-radius: 50%;
 }
-#article-about {
+#article_about {
   text-align: center;
 }
-#article-about h1 {
+#article_about h1 {
   font-size: 2em;
   line-height: 36px;
   font-weight: 700;
   letter-spacing: -1px;
 }
-#article-about p {
+#article_about p {
   color: #fff;
   font-size: 1.18em;
   line-height: 28px;
@@ -1561,14 +1562,75 @@ body {
     opacity: 1;
   }
 }
-/* 简历部分 */
-#content-resume {
+/* 技能部分 */
+#content_skill {
+  margin-top: 100px;
   flex: 1;
 }
-/* 项目部分 */
-#content-project {
-  flex: 1;
+#content_skill .paragraph {
+  text-align: left;
+  margin-bottom: 8px;
 }
+#content_skill .section-title {
+  background-color: #FFFFFF;
+  color: #339900;
+  display: inline-block;
+  font-size: 22px;
+  line-height: 29px;
+  padding: 0 8px 0 8px;
+
+}
+/* 作品部分 */
+#content_project {
+  flex: 1;
+  margin-top: 100px;
+  text-align: left;
+}
+#content_project > div {
+  width: 75%;
+}
+#proj_title {
+  background-color: #FFFFFF;
+  color: #E70202;
+  display: inline-block;
+  font-size: 22px;
+  line-height: 29px;
+  padding: 0 5px 0 5px;
+}
+/* 作品的菜单栏 */
+#menu_proj {
+  text-align: right;
+}
+#menu_proj ul{
+  list-style-type: none;
+  list-style-image: none;
+  color: #FFF;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+  z-index: 20;
+}
+#menu_proj li {
+  padding: 10px 11px;
+  margin: 0;
+  display: inline;
+  cursor: pointer;
+}
+/* 作品的内容部分 */
+.proj-body {
+  display: flex;
+}
+.proj-body .proj-pic {
+  display: inline-block;
+  flex: 7;
+  border: 3px solid #FFFFFF;
+}
+.proj-body .proj-desc {
+  display: inline-block;
+  flex: 3;
+}
+#proj_erp
 /* 右滑按钮 */
 #page-control {
   z-index: 200;
