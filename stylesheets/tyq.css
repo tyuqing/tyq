@@ -1567,6 +1567,9 @@ body {
   margin-top: 100px;
   flex: 1;
 }
+#content_skill > section {
+  max-width: 1000px;
+}
 #content_skill .paragraph {
   text-align: left;
   margin-bottom: 8px;
